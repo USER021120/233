@@ -1,0 +1,24 @@
+void ratriangle(int a)
+{
+	int i = 0, j = 0;
+	for (i = 0; i < a; i++)
+	{
+		for (j = 0; j < a; j++)
+		{
+			if (j < a - 1 - i)
+				printf("  ");
+			else
+				printf("* ");
+		}
+		printf("\n");
+	}
+}
+
+int main()
+{
+	int a = 0;
+	printf("输入一个数字:>");
+	scanf("%d", &a);
+	ratriangle(a);
+	return 0;
+}
